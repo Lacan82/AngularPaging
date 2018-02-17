@@ -3,6 +3,9 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { HttpClientModule } from '@angular/common/http';
+import {ApiserviceService} from './apiservice.service';
+
 
 
 @NgModule({
@@ -10,9 +13,10 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ApiserviceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
