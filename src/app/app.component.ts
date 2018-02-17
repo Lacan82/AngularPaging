@@ -9,7 +9,7 @@ import {Sessions} from './sessions.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  session;
+  session: Sessions[];
 
 
   constructor(private apiservice: ApiserviceService){}
